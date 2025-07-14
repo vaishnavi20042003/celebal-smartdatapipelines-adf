@@ -1,0 +1,13 @@
+{
+  "name": "FTP_Extraction",
+  "properties": {
+    "activities": [
+      {
+        "name": "CopyFTPtoBlob",
+        "type": "Copy",
+        "inputs": [ { "referenceName": "FTP_Dataset", "type": "DatasetReference" } ],
+        "outputs": [ { "referenceName": "Blob_Dataset", "type": "DatasetReference" } ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Monthly_Last_Saturday_Run",
+  "properties": {
+    "activities": [
+      {
+        "name": "RunMonthlyJob",
+        "type": "ExecutePipeline"
+      }
+    ]
+  }
+}

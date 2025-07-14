@@ -1,0 +1,15 @@
+{
+  "name": "SHIR_SQL_Import",
+  "properties": {
+    "activities": [
+      {
+        "name": "CopyFromSQL",
+        "type": "Copy",
+        "linkedServiceName": {
+          "referenceName": "AzureSQLDB",
+          "type": "LinkedServiceReference"
+        }
+      }
+    ]
+  }
+}

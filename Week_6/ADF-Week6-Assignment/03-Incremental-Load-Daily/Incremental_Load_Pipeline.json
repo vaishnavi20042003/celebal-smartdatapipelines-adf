@@ -1,0 +1,20 @@
+{
+  "name": "Incremental_Load",
+  "properties": {
+    "parameters": {
+      "LastWatermark": {
+        "type": "String"
+      }
+    },
+    "activities": [
+      {
+        "name": "DeltaLoad",
+        "type": "Copy",
+        "source": {
+          "type": "SqlSource",
+          "sqlReaderQuery": "SELECT * FROM Employees WHERE LastModified > '@{pipeline().parameters.LastWatermark}'"
+        }
+      }
+    ]
+  }
+}
